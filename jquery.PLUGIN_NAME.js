@@ -131,6 +131,10 @@
 
     };
 
+
+    ////////////////////////////////////////////////////////////
+    // Plugin Initialization
+    ////////////////////////////////////////////////////////////
     $.fn[PLUGIN_NAME] = function(method) {
         if (publicMethods[method]) {
             return publicMethods[method].apply(
@@ -146,6 +150,10 @@
         }
     };
 
+
+    ////////////////////////////////////////////////////////////
+    // Options
+    ////////////////////////////////////////////////////////////
     // TODO: Implement real options with default values
     //       that will be overridden by 'options' passed to init(),
     //       and comment their meanings here.
